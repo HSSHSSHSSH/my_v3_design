@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 
 <template>
@@ -9,5 +8,7 @@
 </template>
 
 <style scoped>
-
+body,html {
+  margin: 0
+}
 </style>

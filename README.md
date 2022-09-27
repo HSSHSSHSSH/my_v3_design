@@ -1,7 +1,31 @@
-# Vue 3 + Vite
+# my_design
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Error
 
-## Recommended IDE Setup
+### “Preprocessor dependency "sass" not found. Did you install it?”
+```
+npm install -g sass 
+npm add -D sass
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+npm install
+npm run dev
+```
+
+## tip
+### use触发install方法
+### 发布npm  package.json中的private必须为false
+
+##双向绑定
+传入的参数名为modelValue 
+在组件中改变modelValue时用 update:modelValue时间
+```
+<h-input :modelValue="value" />
+```
+组件内
+```
+<input :value=modelValue @input="emit('update:modelValue,value')"/>
+```
+tip: 父组件传参有v-model :modelValue="val"时,子组件modelValue为v-model的数据
+## selector组件
+    label元素： 点击label元素 触发 id 与label for属性相同的元素
+

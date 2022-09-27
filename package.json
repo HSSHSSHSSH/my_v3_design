@@ -1,19 +1,34 @@
 {
-  "name": "vite-project",
-  "private": true,
+  "name": "test-hui",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/test-hui.umd.cjs",
+  "module": "./dist/test-hui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/test-hui.js",
+      "require": "./dist/test-hui.umd.cjs"
+    }
+  },
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rollup/pluginutils": "^4.2.1",
+    "scss": "^0.2.4",
     "vue": "^3.2.37",
     "vue-router": "^4.1.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.3",
-    "vite": "^3.0.7"
+    "sass": "^1.55.0",
+    "vite": "^3.0.7",
+    "vite-plugin-md": "^0.12.4"
   }
 }
