@@ -77,7 +77,7 @@ const showOrhideCode = () => {
   height: auto;
   overflow: hidden;
   border-top: 0;
-  margin: 0px 0 15px 0;
+  margin:  15px 0;
   position: relative;
   transition: all 0.15s ease-out;
   .m-copy {

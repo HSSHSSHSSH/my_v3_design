@@ -24,6 +24,13 @@ export default defineConfig({
       name: 'test-hui'
     }
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "./lib/assets/styles/style.scss" as *;`   //配置全局scss选项
+      }
+    }
+  },
   resolve: {
     alias: {
       '@':resolve(__dirname,'src')
