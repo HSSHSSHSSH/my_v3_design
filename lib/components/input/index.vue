@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-input">
     <input type="text" :value="modelValue" @input="input">
   </div>
 </template>
@@ -30,5 +30,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.h-input{
+  display: inline-block;
+  min-width: 250px;
+  input {
+    outline: none;
+    border: 1px solid $border;
+    line-height: 1;
+    padding: 10px 8px;
+    width: 100%;
+    font-size: 14px;
+    color: $color;
+    border-radius: 4px;
+    transition: all .2s ease;
+    &:focus{
+      border-color: $primary;
+    }
+  }
+}
 </style>

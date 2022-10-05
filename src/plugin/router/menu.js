@@ -13,6 +13,11 @@ const menu = [
             path: '/input',
             name: 'input',
             component: () => import('../../../lib/components/input/doc.md')
+        },
+        {
+            path: '/space',
+            name: 'space',
+            component: () => import('../../../lib/components/space/doc.md')
         }
        ]
     },

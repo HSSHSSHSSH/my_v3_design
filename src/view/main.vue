@@ -31,7 +31,7 @@ const switchMenu = (item,index) => {
 <style lang="scss" scoped>
 .container {
   height: 100%;
-  width: 100vh;
+  width: 100%;
   display: flex;
   .left-menu {
     width: 360px;
